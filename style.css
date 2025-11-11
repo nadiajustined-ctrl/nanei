@@ -1,0 +1,242 @@
+*{
+
+}
+body{
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* header */
+.header{
+    position: flex;
+    padding:20px;
+    box-shadow:0 0px 8px 4px rgba(0,0,0,0.4) ;
+
+}
+.nav-contaire{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+    gap: 2.5rem;
+}
+.nav-bar a{
+    text-decoration: 0;
+    color: black;
+}
+.hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.4)) ,url(/jjj.jpg);
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+.hero-content{
+    font-size: 20px;
+    padding-bottom: 2rem;
+}
+.hero-content h1{
+    font-size:4Rem ;
+    margin-bottom: 1.5rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    text-shadow: 2px;
+    color: #fff;
+}
+.hero-content p{
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    font-weight: 200;
+    color: #fff;
+}
+.search-form input{
+    flex: 1;
+    min-width: 150px;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    position: relative;
+    background-color:white ;
+}
+.search-button{
+    border-radius: 50px;
+    min-width: 150px;
+    padding:1rem 1.5rem ;
+    position: relative;
+    color:black ;
+}
+/* decouverte de nos pays */
+h1{
+    justify-content: center;
+    text-align: center;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.card{
+   width: 320px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 40px;
+    text-align: center;
+}
+.card p{
+    font-size: 15px;
+}
+.card img{
+    width: 400px;
+    height: 200px;
+}
+.text {
+    padding: 5px;
+}
+.button{
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 4px;
+    color: #fff;
+}
+/* les hotels */
+.hotels-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+.hotels-item img{
+    width: 400px;
+    height: 300px;
+}
+.hotels-item h2{
+    text-align: left;
+    font-size: 1rem;
+}
+.hotels-item p{
+    font-size: 1rem;
+}
+/* restaurant */
+h3{
+    justify-content: center;
+    text-align: center;
+    margin-top: 10vh;
+    font-size: 1.5rem;
+}
+.resto{
+    justify-content: center;
+    text-align: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+.face{
+    position: absolute;
+    width: 400px;
+    height:300px ;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+
+}
+.front{
+    box-shadow: 0 5px 10px #000;
+}
+ .front img{
+    width: 100%;
+    height: 100%;
+
+}
+.front h4{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0 ,0,0.4);
+    text-align: center;
+}
+
+.plage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    cursor: pointer;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.image .plag{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(0, 0,0, 0.2) ;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+.image .plag-text{
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.image:hover img{
+    transform: scale(1.1);
+}
+.image:hover .plag{
+    opacity: 1;
+}
+/* footer */
+.footer{
+    background-color:#fff;
+    color: black;
+}
+h3{
+    text-align:center ;
+    font-size:1.5rem ;
+    padding:10px ;
+}
+h2{
+    text-align: center;
+}
+/* footer-contact */
+.contact{
+    background-color: black;
+    color: #fff;
+    
+}
+.contact p{
+    color: #fff;
+    text-align: center;
+}
+.about p{
+    font-size: 1.3rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
